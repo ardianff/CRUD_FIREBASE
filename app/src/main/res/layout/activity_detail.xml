@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.DetailActivity"
+    android:background="#009688"
+    tools:showIn="@layout/activity_detail">
+    <androidx.cardview.widget.CardView
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/teacherDetailImageView"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_nopic" />
+
+                <LinearLayout
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="24dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/nameDetailTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="5dp"
+                        android:maxLines="1"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/mmedium"
+                        android:textColor="@color/colorAccent"
+                        android:text="Teacher Name" />
+                    <TextView
+                        android:id="@+id/nimDetailTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:padding="5dp"
+                        android:textColor="#0f0f0f"
+                        android:fontFamily="@font/mlight"
+                        android:minLines="1"
+                        android:text="NIM" />
+<!--                    <TextView-->
+<!--                        android:id="@+id/studiDetailTextView"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textAppearance="?android:attr/textAppearanceSmall"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:textColor="#0f0f0f"-->
+<!--                        android:fontFamily="@font/mlight"-->
+<!--                        android:minLines="1"-->
+<!--                        android:text="Program Studi" />-->
+
+                    <TextView
+                        android:id="@+id/dateDetailTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:padding="5dp"
+                        android:maxLines="1"
+                        android:text="DATE" />
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/categoryDetailTextView"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--                        android:padding="5dp"-->
+<!--                        android:textStyle="italic"-->
+<!--                        android:text="Category : Zen Quotes" />-->
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
